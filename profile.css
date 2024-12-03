@@ -1,0 +1,215 @@
+body {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    background-image: url(mount.png);
+    background-size: 115%;
+
+}
+
+/* Main Content */
+.h1 {
+    margin-top: 30px;
+    margin-left: 5%;
+    font-family: 'Times New Roman';
+    font-size: 45px;
+}
+
+.about {
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.choices {
+    margin-left: 5%;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.description {
+    margin-left: 5%;
+    font-family: Tahoma;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.myPic {
+    margin-right: 3%;
+    float: right;
+    opacity: 90%;
+    border-radius: 50%;
+    transition: transform 0.6s ease;
+}
+
+.myPic:hover {
+    transform: scale(1.1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 93vh; 
+}
+
+.content {
+    flex: 1; 
+}
+
+.fb {
+    padding: 1px;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.UC {
+    margin-top: 58vh;
+}
+
+.uc {
+    height: 5%;
+    width: 5%
+}
+
+
+/* Navbar Styles */
+.nav-icon {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.nav-options {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: #15018b;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.nav-options a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.nav-options a:hover {
+    color: aqua;
+}
+
+#link {
+    margin-left: 4px;
+    margin-top: 20px;
+}
+.hwan {
+    text-align: center;
+}
+
+/*proj hover*/
+.container {
+    margin-top: 10px;
+    margin-left: 30%;
+
+}
+
+.toggle-link {
+    visibility: hidden;
+    color: aqua;
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.toggle-link.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hover-paragraph {
+    cursor: pointer;
+}
+
+.hover-paragraph:hover {
+    color: aqua;
+}
+
+
+/*Ripple effect*/
+
+.ripple-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none; 
+}
+
+.ripple {
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 100%;
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out forwards;
+    pointer-events: none; 
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(0.5); 
+        opacity: 0;
+    }
+}
+
+
+/*more*/
+
+
+form {
+    max-width: 400px;
+    margin-left: 30px;
+    border-radius: 3px;
+}
+input, textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.butt {
+    padding: 10px 15px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+

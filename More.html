@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <form action="index.html">
+        <Button>
+            <i class="fa fa-mail-reply"></i>
+        </Button>
+    </form>
+
+    <h1 style="text-align: center;">For further Questions, please <span style="color: aqua;">contact</span> me through these <span style="color: aqua;">Platforms:</span> </h1>
+
+    <div class="fb">
+        <p>
+            <span style="margin-left: 10%;"><img src="facebooks.png" alt=""><a href="https://www.facebook.com/princessysha.panizares" style="color: aqua;"> Facebook</a></span>
+            <span style="margin-left: 15px;"> <img src="instagrams.png" alt=""><a href="https://www.instagram.com/qy_jngumi/profilecard/?igsh=MXJlYXc2c2VrOTY3ag==" style="color: aqua;"> Instagram</a></span>
+            <Span style="margin-left: 15px;"><img src="githubs.png" alt=""><a href="https://github.com/jangjangmi" style="color: aqua;"> Github</a></Span>
+        </p>
+
+       <p>
+        <img src="newsletter-subscribes.png" alt=""><span style="color: aqua;"> G-mail:</span>
+        <form action="https://formsubmit.co/jangmitufox@gmail.com" method="POST">
+            
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="false"> 
+
+            <label for="name" style="color: aqua;">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+            <label for="email" style="color: aqua;">E-mail: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+            <label for="message" style="color: aqua;">Message: </label>
+            <textarea name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
+    
+            <button type="submit" class="butt">Send</button>
+        </form>
+       </p>
+    </div>
+<p style="font-size: 25px;">Please, if you are planning to contact me through these platforms, do fill out your names and professional or un-professional intentions <span style="color: aqua; font-family: 'Times New Roman', Times, serif;">Thankyou!</span></p>
+
+<script>
+    document.body.addEventListener('click', function(e) {
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+
+    const size = 150; 
+    ripple.style.width = ripple.style.height = `${size}px`;
+
+    const x = e.clientX - size / 2; 
+    const y = e.clientY - size / 2; // pang Center sa ripple
+
+    ripple.style.left = `${x}px`;
+    ripple.style.top = `${y}px`;
+
+    document.body.appendChild(ripple);
+
+    setTimeout(() => {
+        ripple.remove();
+    }, 600);
+});
+</script>
+</body> 
+</html>
